@@ -69,9 +69,9 @@ setInterval(() => {
         : "";
   } else {
     content = `Spent ${state.timeSpent} from ${state.timeEstimated} hours
-    <span class="progress-bar progress-bar-small"><span class="progress" style="${state.timeSpent >
-      state.timeEstimated ? "background: red;" : ""} width: ${(state.timeSpent <
-    state.timeEstimated
+    <span class="progress-bar progress-bar-small"><span class="progress" style="${
+      state.timeSpent > state.timeEstimated ? "background: red;" : ""
+    } width: ${(state.timeSpent < state.timeEstimated
       ? state.timeSpent / state.timeEstimated
       : 1) * 100}%">&nbsp;</span></span>
     `;
@@ -176,10 +176,10 @@ ${comment.getElementsByClassName("timestamp")[0].innerHTML}
       if (data.timeSpent) {
         state.timeSpent = Number(state.timeSpent) + Number(data.timeSpent);
       }
-      if(data.timeEstimated) {
+      if (data.timeEstimated) {
         state.timeEstimated = Number(data.timeEstimated);
       }
-      
+
       console.log({ state });
     } catch (err) {
       console.log(err);
