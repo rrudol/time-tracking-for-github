@@ -5,7 +5,7 @@
 ## Installation
 
 - [Chrome](https://chrome.google.com/webstore/detail/time-tracking-for-github/ppbllffpnkfpokojnikncenchggaemfc)
-- [Firefox](https://chrome.google.com/webstore/detail/time-tracking-for-github/ppbllffpnkfpokojnikncenchggaemfc)
+- [Firefox](https://addons.mozilla.org/pl/firefox/addon/time-tracking-for-github/)
 
 ## Usage
 
