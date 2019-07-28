@@ -1,14 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Time Tracking for Github Issues",
-  "version": "0.2",
-
+  "version": "0.2.1",
   "description": "Add time tracking feature into Github Issues",
-
-  "icons": {
-    "48": "icons/border-48.png"
-  },
-
   "content_scripts": [
     {
       "matches": ["*://*.github.com/*"],

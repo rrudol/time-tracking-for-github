@@ -60,7 +60,8 @@ setInterval(() => {
   if (!state.timeSpent && !state.timeEstimated) {
     content = `None yet`;
   } else if (state.timeSpent && !state.timeEstimated) {
-    content = `Spent ${state.timeSpent} hour` + state.timeSpent > 1 ? "s" : "";
+    content =
+      `Spent ${state.timeSpent} hour` + (state.timeSpent > 1 ? "s" : "");
   } else if (!state.timeSpent && state.timeEstimated) {
     content =
       `Issue estimated for ${state.timeEstimated} hour` + state.timeEstimated >
@@ -121,10 +122,8 @@ function initialize() {
   <h3 class="discussion-item-header f5 text-normal" id="event-2500214473">
 
     <span class="discussion-item-icon">
-      <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"></path></svg>
+      <svg class="octicon octicon-watch" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 8h2v1H5V5h1v3zm6 0c0 2.22-1.2 4.16-3 5.19V15c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1v-1.81C1.2 12.16 0 10.22 0 8s1.2-4.16 3-5.19V1c0-.55.45-1 1-1h4c.55 0 1 .45 1 1v1.81c1.8 1.03 3 2.97 3 5.19zm-1 0c0-2.77-2.23-5-5-5S1 5.23 1 8s2.23 5 5 5 5-2.23 5-5z"></path></svg>
     </span>
-
-    
 
         <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=9325182" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/${username}"></a>
   <a class="author text-inherit" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=9325182" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/${username}">${username}</a>
@@ -133,8 +132,8 @@ function initialize() {
     data.timeSpent
       ? `
   spent
-  <span class="IssueLabel d-inline-block v-align-middle" style="background-color: #5de847;">
-    <a class="lh-condensed-ultra" href="#" style="color: #000000;">${
+  <span class="IssueLabel d-inline-block v-align-middle" style="background-color: #2cbe4e;">
+    <a class="lh-condensed-ultra" href="#" style="color: #fff;">${
       data.timeSpent
     } hours</a>
   </span>
